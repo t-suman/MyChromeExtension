@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "CP 12hr Formatter",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/contests?complete=true"],
+      "js": ["tConvert.js", "cf.content.js"]
+    },
+    {
+      "matches": ["https://clist.by/"],
+      "js": ["tConvert.js", "clist.content.js"]
+    },
+    {
+      "matches": ["https://www.codechef.com/contests"],
+      "js": ["tConvert.js", "cc.content.js"]
+    },
+    {
+      "matches": [
+        "https://codingcompetitions.withgoogle.com/kickstart/schedule"
+      ],
+      "js": ["tConvert.js", "ks.content.js"]
+    }
+  ]
+}
